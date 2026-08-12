@@ -1,0 +1,4 @@
+@EndUserText.label: 'RAP Git Demo: Employee Service'
+define service ZUI_RAP_GIT_EMP {
+  expose ZC_RAP_GIT_EMP as Employee;
+}

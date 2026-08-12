@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SRVB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <BINDING>
+    <SERVICE_BINDING>ZUI_RAP_GIT_EMP_O4</SERVICE_BINDING>
+    <DESCRIPTION>RAP Git Demo: Employee OData V4 UI Service Binding</DESCRIPTION>
+    <BINDING_TYPE>ODATA</BINDING_TYPE>
+    <BINDING_VERSION>0002</BINDING_VERSION>
+    <BINDING_CATEGORY>0001</BINDING_CATEGORY>
+   </BINDING>
+   <SERVICES>
+    <SERVICE>
+     <SERVICE_DEFINITION>ZUI_RAP_GIT_EMP</SERVICE_DEFINITION>
+     <SERVICE_VERSION>0001</SERVICE_VERSION>
+     <RELEASE_STATE>NOT_RELEASED</RELEASE_STATE>
+    </SERVICE>
+   </SERVICES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

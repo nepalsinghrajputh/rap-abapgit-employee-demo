@@ -1,0 +1,34 @@
+managed implementation in class zbp_i_rap_git_emp unique;
+strict ( 2 );
+
+define behavior for ZI_RAP_GIT_EMP alias Employee
+persistent table zrap_git_emp
+lock master
+authorization master ( instance )
+etag master LastChangedAt
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) EmployeeId, CreatedAt, CreatedBy, LastChangedAt, LastChangedBy;
+
+  determination setEmployeeId on modify { create; }
+  determination setCreatedAdminData on save { create; }
+  determination setChangedAdminData on save { update; }
+
+  validation validateEmployee on save { create; update; field FirstName, LastName, Department, Email; }
+
+  mapping for zrap_git_emp
+  {
+    EmployeeId    = employee_id;
+    FirstName     = first_name;
+    LastName      = last_name;
+    Department    = department;
+    Email         = email;
+    CreatedAt     = created_at;
+    CreatedBy     = created_by;
+    LastChangedAt = changed_at;
+    LastChangedBy = changed_by;
+  }
+}

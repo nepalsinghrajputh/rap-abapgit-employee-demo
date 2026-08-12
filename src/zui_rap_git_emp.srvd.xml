@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SRVD" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VRSD>
+    <OBJECT_TYPE>SRVD</OBJECT_TYPE>
+    <FULL_NAME>ZUI_RAP_GIT_EMP</FULL_NAME>
+    <VERSION>active</VERSION>
+    <TEXT>RAP Git Demo: Employee Service</TEXT>
+   </VRSD>
+  </asx:values>
+ </asx:abap>
+</abapGit>
